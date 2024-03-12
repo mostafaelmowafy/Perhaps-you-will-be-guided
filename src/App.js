@@ -11,7 +11,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/prophets" element={<Prophets />} />
+        <Route path="/" element={<Prophets />} />
         <Route path="/prayer" element={<Prayer />} />
         <Route path="/quran" element={<Quran />} />
         <Route path="/question" element={<Question />} />

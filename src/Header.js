@@ -26,7 +26,7 @@ function Header() {
             <Link to="prayer"> الصلاة </Link>
           </li>
           <li>
-            <Link to="prophets">قصص الأنبياء</Link>
+            <Link to="/">قصص الأنبياء</Link>
           </li>
           <li>
             <Link to="quran">قرأن</Link>
