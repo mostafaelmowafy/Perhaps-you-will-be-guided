@@ -1,0 +1,35 @@
+:root {
+  --gold: rgb(156, 163, 27);
+  --main: rgb(12, 91, 0);
+  --bc--header: rgb(235, 249, 244);
+  --btn-color: rgba(94, 192, 216, 0.6);
+  --btn-hover-color: rgb(94, 191, 216);
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  margin: 80px 50px;
+  direction: rtl;
+  overflow: hidden;
+}
+.main .card {
+  width: 25%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: var(--bc--header);
+}
+.main .card img {
+  height: 50%;
+  margin: 0;
+}
+.main .card div {
+  padding: 0 15px;
+  height: 50%;
+}
+.quran_h3 {
+  color: var(--gold);
+}
