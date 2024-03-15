@@ -70,24 +70,22 @@ export default function Question() {
           <div className={styles.numbers}>
             {singleData.map((q) => {
               return (
-                <>
-                  <div
-                    key={q.id}
-                    onClick={() => {
-                      setStep(q.id);
-                      q.active = true;
-                    }}
-                    className={q.active && styles.active}
-                  >
-                    {q.id}
-                  </div>
-                </>
+                <div
+                  key={q.id}
+                  onClick={() => {
+                    setStep(q.id);
+                    q.active = true;
+                  }}
+                  className={q.active ? styles.active : undefined}
+                >
+                  {q.id}
+                </div>
               );
             })}
           </div>
           <div className={styles.message}>
             <p>
-              {step}: {questionsData[step - 1].qes}
+              {step}: {singleData[step - 1].qes}
             </p>
           </div>
           <div className={styles.buttons}>
@@ -96,7 +94,7 @@ export default function Question() {
             </Button>
             <button
               onClick={showHandler}
-              className={answerIsOpen && styles.active}
+              className={answerIsOpen ? styles.active : undefined}
             >
               الأجابة
             </button>
@@ -106,9 +104,7 @@ export default function Question() {
           </div>
           {answerIsOpen && (
             <div className={styles.answer}>
-              <h3 className={styles.ques_h3}>
-                {questionsData[step - 1].answer}
-              </h3>
+              <h3 className={styles.ques_h3}>{singleData[step - 1].answer}</h3>
             </div>
           )}
         </div>
