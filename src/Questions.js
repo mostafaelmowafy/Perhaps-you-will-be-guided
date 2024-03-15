@@ -9,7 +9,6 @@ export default function Question() {
   const singleData = questionsData.filter((q) => {
     return q.name === show;
   })[0].data;
-  console.log(singleData);
   function preHandler() {
     if (step > 1) {
       setStep((s) => --s);
@@ -36,6 +35,7 @@ export default function Question() {
       <div className={styles.header}>
         <ul>
           <li
+            className={show === "prophets" ? styles.active : ""}
             onClick={() => {
               setShow("prophets");
             }}
@@ -43,6 +43,7 @@ export default function Question() {
             الأنبياء
           </li>
           <li
+            className={show === "history" ? styles.active : ""}
             onClick={() => {
               setShow("history");
             }}
@@ -50,6 +51,7 @@ export default function Question() {
             تاريخ
           </li>
           <li
+            className={show === "jurisprudence" ? styles.active : ""}
             onClick={() => {
               setShow("jurisprudence");
             }}
@@ -57,6 +59,7 @@ export default function Question() {
             فقه
           </li>
           <li
+            className={show === "quran" ? styles.active : ""}
             onClick={() => {
               setShow("quran");
             }}
