@@ -1,7 +1,7 @@
 import styles from "./prophets.module.css";
 import { prophetsData } from "./Data";
 import Poster from "./Poster";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 
 function Prophets() {
   const [show, setShow] = useState(false);
