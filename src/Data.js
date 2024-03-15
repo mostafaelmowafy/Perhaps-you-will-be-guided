@@ -335,7 +335,7 @@ const prophetsData = [
   {
     id: 8,
     name: "لوط عليه السلام",
-    image: require("./assets/images/loot.webp"),
+    image: require("./assets/images/loot.jpg"),
     description:
       "نبي أرسله الله تعالى لقومه الذين كانوا يقطنون في منطقة البحر الميت، وقد عُرف بدعوته لقومه للإقلاع عن المعاصي والفواحش.",
 
