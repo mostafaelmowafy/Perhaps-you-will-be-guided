@@ -184,6 +184,7 @@ const questionsData = [
 ];
 const prophetsData = [
   {
+    determination: false,
     id: 1,
     name: "أدم",
     image: require("./assets/images/adam.jpeg"),
@@ -213,6 +214,7 @@ const prophetsData = [
     ],
   },
   {
+    determination: true,
     id: 2,
     name: "نوح عليه السلام",
     image: require("./assets/images/noh2.jpg"),
@@ -235,6 +237,7 @@ const prophetsData = [
     ],
   },
   {
+    determination: false,
     id: 3,
     name: "إدريس عليه السلام",
     image: require("./assets/images/edres.jpg"),
@@ -253,6 +256,7 @@ const prophetsData = [
     // ],
   },
   {
+    determination: false,
     id: 4,
     name: "صالح عليه السلام",
     image: require("./assets/images/saleh.jpg"),
@@ -271,6 +275,7 @@ const prophetsData = [
     ],
   },
   {
+    determination: false,
     id: 5,
     name: "هود عليه السلام",
     image: require("./assets/images/hod.jpg"),
@@ -289,6 +294,7 @@ const prophetsData = [
     ],
   },
   {
+    determination: true,
     id: 6,
     name: "إبراهيم عليه السلام.",
     image: require("./assets/images/abrahem.jpeg"),
@@ -315,6 +321,7 @@ const prophetsData = [
     ],
   },
   {
+    determination: false,
     id: 7,
     name: "إسماعيل عليه السلام",
     image: require("./assets/images/esma3el.png"),
@@ -333,6 +340,7 @@ const prophetsData = [
     ],
   },
   {
+    determination: false,
     id: 8,
     name: "لوط عليه السلام",
     image: require("./assets/images/loot.jpg"),
@@ -351,6 +359,7 @@ const prophetsData = [
     ],
   },
   {
+    determination: false,
     id: 9,
     name: "إسحاق عليه السلام",
     image: require("./assets/images/es7ak.jpg"),
@@ -369,6 +378,7 @@ const prophetsData = [
     ],
   },
   {
+    determination: false,
     id: 10,
     name: "يعقوب عليه السلام",
     image: require("./assets/images/y3kob.png"),
@@ -387,6 +397,7 @@ const prophetsData = [
     // ],
   },
   {
+    determination: false,
     id: 11,
     name: "يوسف عليه السلام",
     image: require("./assets/images/yosof.gif"),
@@ -405,6 +416,7 @@ const prophetsData = [
     ],
   },
   {
+    determination: false,
     id: 12,
     name: "شعيب عليه السلام",
     image: require("./assets/images/sho3ib.jpg"),
@@ -423,6 +435,7 @@ const prophetsData = [
     ],
   },
   {
+    determination: false,
     id: 13,
     name: "أيوب عليه السلام",
     image: require("./assets/images/ayob.jpg"),
@@ -441,6 +454,7 @@ const prophetsData = [
     ],
   },
   {
+    determination: false,
     id: 14,
     name: "هارون عليه السلام",
     image: require("./assets/images/haron.jpg"),
@@ -459,6 +473,7 @@ const prophetsData = [
     // ],
   },
   {
+    determination: true,
     id: 15,
     name: "موسى عليه السلام",
     image: require("./assets/images/mosa.jpg"),
@@ -477,6 +492,7 @@ const prophetsData = [
     ],
   },
   {
+    determination: false,
     id: 16,
     name: "ذو الكفل عليه السلام",
     image: require("./assets/images/zoalkafal.jpg"),
@@ -495,6 +511,7 @@ const prophetsData = [
     // ],
   },
   {
+    determination: false,
     id: 17,
     name: "داود عليه السلام",
     image: require("./assets/images/dawood.jpg"),
@@ -513,6 +530,7 @@ const prophetsData = [
     ],
   },
   {
+    determination: false,
     id: 18,
     name: "سليمان عليه السلام",
     image: require("./assets/images/soliman.jpg"),
@@ -531,6 +549,7 @@ const prophetsData = [
     ],
   },
   {
+    determination: false,
     id: 19,
     name: "اليسع عليه السلام",
     image: require("./assets/images/elyas3.jpg"),
@@ -548,6 +567,7 @@ const prophetsData = [
     // ],
   },
   {
+    determination: false,
     id: 20,
     name: "إلياس عليه السلام",
     image: require("./assets/images/elyas.jpg"),
@@ -566,6 +586,7 @@ const prophetsData = [
     // ],
   },
   {
+    determination: false,
     id: 21,
     name: "يونس  عليه السلام",
     image: require("./assets/images/yonos.jpg"),
@@ -584,6 +605,7 @@ const prophetsData = [
     ],
   },
   {
+    determination: false,
     id: 22,
     name: "زكريا عليه السلام",
     image: require("./assets/images/zkria.jpg"),
@@ -602,6 +624,7 @@ const prophetsData = [
     ],
   },
   {
+    determination: false,
     id: 23,
     name: "يحي عليه السلام",
     image: require("./assets/images/ye7ya.gif"),
@@ -620,6 +643,7 @@ const prophetsData = [
     ],
   },
   {
+    determination: true,
     id: 24,
     name: "عيسى عليه السلام",
     image: require("./assets/images/3esa.jpg"),
@@ -638,6 +662,7 @@ const prophetsData = [
     ],
   },
   {
+    determination: true,
     id: 25,
     name: "محمد عليه السلام",
     image: require("./assets/images/mohamed.jpg"),

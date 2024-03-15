@@ -29,7 +29,25 @@
   margin-block: 10vw;
   direction: ltr;
 }
-
+.header {
+  text-align: center;
+}
+.active {
+  color: var(--gold);
+}
+.header ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-inline-end: 45px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-block-start: 5px;
+}
+.header ul li:hover,
+.header ul li:active,
+.header ul li:focus {
+  color: var(--gold);
+}
 .card {
   display: flex;
   width: 70%;
