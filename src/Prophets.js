@@ -64,7 +64,7 @@ function Prophets() {
                   {/* <br /> */}
                   {obj.links?.map((link) => {
                     return (
-                      <a href={link.url}>
+                      <a href={link.url} target="_blank" rel="noreferrer">
                         <button className={styles.btn}>{link?.content}</button>
                       </a>
                     );
