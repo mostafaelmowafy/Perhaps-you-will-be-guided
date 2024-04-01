@@ -38,6 +38,7 @@ export default function Question() {
             className={show === "prophets" ? styles.active : ""}
             onClick={() => {
               setShow("prophets");
+              setStep(1);
             }}
           >
             الأنبياء
@@ -46,6 +47,7 @@ export default function Question() {
             className={show === "history" ? styles.active : ""}
             onClick={() => {
               setShow("history");
+              setStep(1);
             }}
           >
             تاريخ
@@ -54,6 +56,7 @@ export default function Question() {
             className={show === "jurisprudence" ? styles.active : ""}
             onClick={() => {
               setShow("jurisprudence");
+              setStep(1);
             }}
           >
             فقه
@@ -62,6 +65,7 @@ export default function Question() {
             className={show === "quran" ? styles.active : ""}
             onClick={() => {
               setShow("quran");
+              setStep(1);
             }}
           >
             قران
