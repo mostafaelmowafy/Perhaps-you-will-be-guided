@@ -93,7 +93,7 @@ export default function Question() {
           </div>
           <div className={styles.buttons}>
             <Button onClick={preHandler}>
-              <span>⏮️</span>السابق
+              <span>⏭️</span>السابق
             </Button>
             <button
               onClick={showHandler}
@@ -102,7 +102,7 @@ export default function Question() {
               الأجابة
             </button>
             <Button onClick={nextHandler}>
-              التالي<span>⏭️</span>
+              التالي<span>⏮️</span>
             </Button>
           </div>
           {answerIsOpen && (

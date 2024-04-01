@@ -8,44 +8,62 @@
   --btn-hover-color: rgb(94, 191, 216);
   --another-btn-color: #7950f2;
 }
+
 .header {
   text-align: center;
 }
 .active {
   color: var(--gold);
+  font-weight: bold;
+  border-bottom: 1px solid var(--gold);
 }
 .header ul li {
   list-style-type: none;
   display: inline-block;
   margin-inline-end: 45px;
   cursor: pointer;
-  font-weight: bold;
-  margin-block-start: 5px;
+  padding-block: 5px;
 }
 .header ul li:hover,
 .header ul li:active,
 .header ul li:focus {
   color: var(--gold);
+  font-weight: bold;
 }
 .container {
-  height: calc(100vh - 65px);
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-block-start: 20px;
 }
 .steps {
-  width: 80%;
   background-color: var(--secoundary-background);
   border-radius: 7px;
-  padding: 25px 100px;
+  padding: 25px 50px;
   margin-inline: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+}
+
+@media (max-width: 500px) {
+  .steps {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 380px) {
+  .header ul li {
+    margin-inline-end: 35px;
+  }
 }
 
 .numbers {
   display: flex;
-  gap: 2px;
+  gap: 5px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .numbers > div {
@@ -76,14 +94,18 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .buttons {
   display: flex;
   justify-content: space-between;
+  gap: 50px;
 }
-
+@media (max-width: 380px) {
+  .buttons {
+    gap: 10px;
+  }
+}
 .buttons button {
   border: none;
   cursor: pointer;
@@ -97,7 +119,7 @@
 
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .buttons button:hover {

@@ -1,0 +1,8 @@
+.main {
+  display: flex;
+  gap: 30px;
+}
+.main img {
+  height: calc(100vh - 62px);
+  width: 30%;
+}
