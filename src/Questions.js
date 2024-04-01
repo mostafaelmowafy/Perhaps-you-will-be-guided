@@ -12,14 +12,14 @@ export default function Question() {
   function preHandler() {
     if (step > 1) {
       setStep((s) => --s);
-      questionsData[step - 2].active = true;
+      singleData[step - 2].active = true;
       setAnswerIsOpen(false);
     }
   }
   function nextHandler() {
-    if (step < questionsData.length) {
+    if (step < singleData.length) {
       setStep((s) => ++s);
-      questionsData[step].active = true;
+      singleData[step].active = true;
       setAnswerIsOpen(false);
     }
   }
