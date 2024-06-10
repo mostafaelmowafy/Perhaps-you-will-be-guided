@@ -1,9 +1,9 @@
 :root {
   --gold: rgb(156, 163, 27);
-  --main: rgb(12, 91, 0);
+  /* --main: rgb(12, 91, 0); */
   --secoundary-background: #f7f7f7;
   --secoundary-butn: #e7e7e7;
-  --bc--header: rgb(235, 249, 244);
+  /* --bc--header: rgb(235, 249, 244); */
   --btn-color: rgba(94, 192, 216, 0.6);
   --btn-hover-color: rgb(94, 191, 216);
   --another-btn-color: #7950f2;

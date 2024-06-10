@@ -31,7 +31,9 @@ function Header() {
           <li>
             <Link to="quran">قرأن</Link>
           </li>
-          <li>أطفال</li>
+          <li>
+            <Link to="remembrance">أذكار</Link>
+          </li>
           <li>
             <Link to="question"> أسئلة </Link>
           </li>

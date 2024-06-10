@@ -12,7 +12,7 @@ function Prophets() {
   }
   return (
     <div className="container">
-      <Poster url={require("./assets/images/poster3.jpg")} />
+      {/* <Poster url={require("./assets/images/poster3.jpg")} /> */}
       <div className={styles.header}>
         <ul>
           <li

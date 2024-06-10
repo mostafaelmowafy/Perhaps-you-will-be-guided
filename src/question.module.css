@@ -1,21 +1,11 @@
-:root {
-  --gold: rgb(156, 163, 27);
-  --main: rgb(12, 91, 0);
-  --secoundary-background: #f7f7f7;
-  --secoundary-butn: #e7e7e7;
-  --bc--header: rgb(235, 249, 244);
-  --btn-color: rgba(94, 192, 216, 0.6);
-  --btn-hover-color: rgb(94, 191, 216);
-  --another-btn-color: #7950f2;
-}
-
 .header {
   text-align: center;
+  color: var(--main);
 }
 .active {
-  color: var(--gold);
+  color: var(--secoundary);
   font-weight: bold;
-  border-bottom: 1px solid var(--gold);
+  border-bottom: 1px solid var(--secoundary);
 }
 .header ul li {
   list-style-type: none;
@@ -27,7 +17,7 @@
 .header ul li:hover,
 .header ul li:active,
 .header ul li:focus {
-  color: var(--gold);
+  color: var(--secoundary);
   font-weight: bold;
 }
 .container {
@@ -37,10 +27,12 @@
   margin-block-start: 20px;
 }
 .steps {
-  background-color: var(--secoundary-background);
+  background-color: rgba(255, 255, 255, 0.04);
+  color: white;
+  border: solid 1px var(--main);
   border-radius: 7px;
   padding: 25px 50px;
-  margin-inline: 20px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,7 +61,8 @@
 .numbers > div {
   height: 30px;
   aspect-ratio: 1;
-  background-color: var(--secoundary-butn);
+  background-color: var(--main);
+  color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -79,10 +72,10 @@
   cursor: pointer;
 }
 .numbers > div:hover {
-  background-color: var(--btn-color);
+  background-color: var(--secoundary);
 }
 .numbers .active {
-  background-color: var(--btn-hover-color);
+  background-color: var(--secoundary);
   color: #fff;
 }
 
@@ -114,7 +107,7 @@
   font-size: 14px;
   font-weight: bold;
 
-  background-color: var(--btn-color);
+  background-color: var(--main);
   color: #fff;
 
   display: flex;
@@ -123,10 +116,10 @@
 }
 
 .buttons button:hover {
-  background-color: var(--btn-hover-color);
+  background-color: var(--btn-color);
 }
 .buttons .active {
-  background-color: var(--btn-hover-color);
+  background-color: var(--btn-color);
 }
 .buttons button span {
   font-size: 16px;
@@ -143,5 +136,5 @@ h3 {
   margin-block: 50px;
 }
 .ques_h3 {
-  color: var(--gold);
+  color: var(--secoundary);
 }

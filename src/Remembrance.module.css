@@ -1,0 +1,35 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* align-items: center; */
+  color: white;
+  padding: 30px;
+}
+.main div h3 {
+  display: inline;
+  margin-inline-end: 25px;
+}
+.head {
+  margin-block-end: 20px;
+  color: var(--main);
+  text-align: center;
+}
+.head h3:hover {
+  color: var(--secoundary);
+  cursor: pointer;
+}
+.active {
+  color: var(--secoundary);
+}
+
+.content p {
+  background-color: rgba(240, 248, 255, 0.08);
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.content p span {
+  float: left;
+  color: var(--main);
+}

@@ -1,0 +1,12 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+iframe {
+  width: 70%;
+  height: 358px;
+  border: 1px solid #ddd;
+  margin-block-start: 120px;
+  border-radius: 25px;
+}

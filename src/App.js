@@ -6,7 +6,7 @@ import Prophets from "./Prophets";
 import Quran from "./Quran";
 import Question from "./Questions";
 import Person from "./person";
-
+import Remembrance from "./Remembrance";
 function App() {
   return (
     <>
@@ -14,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Prophets />} />
         <Route path="/prayer" element={<Prayer />} />
+        <Route path="/remembrance" element={<Remembrance />} />
         <Route path="/quran" element={<Quran />} />
         <Route path="/question" element={<Question />} />
         <Route path="/quran/person" element={<Person />} />

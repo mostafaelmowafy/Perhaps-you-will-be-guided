@@ -1,8 +1,76 @@
+:root {
+  --gold: rgb(208, 219, 0);
+  --secoundary: #83b4ff;
+  --main: #5a72a0;
+  --bc--main: #1a2130;
+}
 .main {
   display: flex;
   gap: 30px;
+  background-color: var(--bc--main);
+  color: #ffffff;
+  overflow: hidden;
+}
+.main div {
+  padding-inline: 20px;
 }
 .main img {
   height: calc(100vh - 62px);
   width: 30%;
+}
+.label {
+  font-weight: bold;
+  display: inline-block;
+  width: 60px;
+  margin-block-start: 20px;
+}
+.label + select {
+  display: inline-block;
+  width: 180px;
+  padding: 5px;
+  background-color: #1a213000;
+  color: white;
+  border-radius: 5px;
+}
+.label + select option {
+  background-color: #1a2130;
+}
+.audio {
+  display: flex;
+  justify-content: center;
+  margin-block-start: 100px;
+  width: 100%;
+}
+.audio audio {
+  width: 80%;
+}
+@media (max-width: 680px) {
+  .main {
+    flex-direction: column;
+  }
+  .main img {
+    height: calc(40vh);
+    width: 100%;
+  }
+  .audio {
+    display: flex;
+    justify-content: center;
+    margin-block: 50px;
+    width: 100%;
+  }
+  h1 {
+    margin-block-start: 0;
+  }
+}
+.audio audio::-webkit-media-controls-panel {
+  background-color: var(--main);
+}
+
+.audio audio::-webkit-media-controls-mute-button,
+.audio audio::-webkit-media-controls-play-button {
+  background-color: rgb(201, 216, 216);
+  border-radius: 50%;
+}
+h1 {
+  color: var(--secoundary);
 }

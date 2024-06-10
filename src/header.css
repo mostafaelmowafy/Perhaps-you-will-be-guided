@@ -1,7 +1,8 @@
 :root {
   --gold: rgb(156, 163, 27);
-  --main: rgb(12, 91, 0);
-  --bc--header: rgb(235, 249, 244);
+  --secoundary: #83b4ff;
+  --main: #5a72a0;
+  --bc--header: #1a2130;
   --bc--header-opacity: rgba(235, 249, 244, 0.768);
 }
 header {
@@ -19,11 +20,13 @@ header nav {
 .menu div {
   width: 35px;
   height: 3px;
-  background-color: #333;
+  background-color: var(--main);
   margin: 6px 0;
   transition: 0.4s;
 }
-
+.menu:hover div {
+  background-color: var(--secoundary);
+}
 .menu .bar2 {
   width: 20px;
 }
@@ -42,7 +45,7 @@ header {
   height: 60px;
   display: flex;
   align-items: center;
-  border-bottom: 2px solid var(--gold);
+  border-bottom: 2px solid var(--main);
 }
 header .logo {
   width: 90px;
@@ -97,10 +100,10 @@ header ul li a {
   color: var(--main);
 }
 header ul li a:hover {
-  color: var(--gold);
+  color: var(--secoundary);
   transition-duration: 0.5s;
   cursor: pointer;
 }
 header ul li a:focus {
-  color: var(--gold);
+  color: var(--secoundary);
 }
