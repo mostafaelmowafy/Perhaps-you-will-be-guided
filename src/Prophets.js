@@ -40,7 +40,7 @@ function Prophets() {
                     {/* <br /> */}
                     {obj.links?.map((link) => {
                       return (
-                        <a href={link.url}>
+                        <a href={link.url} key={link.content}>
                           <button className={styles.btn}>
                             {link?.content}
                           </button>

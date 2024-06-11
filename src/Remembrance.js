@@ -12,6 +12,7 @@ export default function Remembrance() {
             <h3
               onClick={() => setAzka(azkar.data[0].category)}
               className={azka === azkar.data[0].category && styles.active}
+              key={azkar.data[0].category}
             >
               {azkar.data[0].category}
             </h3>
@@ -27,7 +28,7 @@ export default function Remembrance() {
                 {azka === azkar.data[0].category &&
                   azkar.data.map((d) => {
                     return (
-                      <p>
+                      <p key={d.content}>
                         {d.content} <span>{d.count}</span>
                       </p>
                     );
