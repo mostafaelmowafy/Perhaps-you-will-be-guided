@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 5%;
 }
 iframe {
   width: 70%;
@@ -9,4 +11,40 @@ iframe {
   border: 1px solid #ddd;
   margin-block-start: 120px;
   border-radius: 25px;
+}
+.content {
+  width: 90%;
+  margin-block-start: 30px;
+  color: white;
+  /* font-size: 18px; */
+}
+.h2 {
+  color: var(--secoundary);
+}
+.h3 {
+  color: #5f84c9;
+  margin-block: 15px;
+}
+.h4 {
+  color: var(--main);
+  margin-block: 5px;
+}
+.card {
+  width: 560px;
+  /* height: 315px; */
+  margin-block: 20px 40px;
+  color: var(--secoundary);
+  border: 1px solid var(--main);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.card iframe {
+  width: 100%;
+}
+.card p {
+  /* padding-inline-start: 10px; */
+  margin-block-end: -100px;
 }
