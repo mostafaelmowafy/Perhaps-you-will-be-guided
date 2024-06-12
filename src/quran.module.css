@@ -101,3 +101,65 @@ body {
     display: block;
   }
 }
+.head {
+  /* display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; */
+  text-align: center;
+  padding-inline: 0;
+}
+.head li {
+  list-style-type: none;
+  display: inline-block;
+  background-color: var(--main);
+  color: white;
+  border-radius: 25px;
+  padding: 5px 10px;
+  border: none;
+  margin-block-start: 30px;
+  cursor: pointer;
+  margin-inline-end: 5px;
+}
+
+.head li:hover,
+.head .active {
+  background-color: var(--btn-color);
+  transform: scale(1.05);
+  transition-duration: 0.3s;
+}
+.radioPage {
+  text-align: center;
+  margin-inline: 10px;
+}
+.radioPage p {
+  color: var(--main);
+  margin-block-start: 50px;
+}
+.radioPage audio {
+  margin-block-start: 10px;
+  max-width: 90%;
+}
+.livetv {
+  text-align: center;
+}
+.livetv button {
+  background-color: var(--main);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  margin-inline-start: 15px;
+  margin-block-start: 30px;
+  cursor: pointer;
+}
+.livetv button:hover,
+.livetv .active {
+  background-color: var(--btn-color);
+  transform: scale(1.05);
+  transition-duration: 0.3s;
+}
+.livetv iframe {
+  margin-block-start: 10px;
+}

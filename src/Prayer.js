@@ -3,9 +3,10 @@ import styles from "./prayer.module.css";
 function Prayer() {
   return (
     <div className={styles.main}>
-      <iframe rolling="no" src="https://www.islamicfinder.org/prayer-widget/">
-        {" "}
-      </iframe>
+      <iframe
+        rolling="no"
+        src="https://www.islamicfinder.org/prayer-widget/"
+      ></iframe>
       <div className={styles.content}>
         <p>
           <h2 className={styles.h2}>
@@ -110,6 +111,7 @@ function Prayer() {
           يَنْفَعُ.
         </p>
       </div>
+      <hr className={styles.hr} />
       <div className={styles.card}>
         <p>
           هذا الكلام الجميل هو مجرد جزء من فيديو أحمد العربي يفضل سماع الفيديو
