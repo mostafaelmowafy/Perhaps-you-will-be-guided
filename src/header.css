@@ -1,10 +1,3 @@
-:root {
-  --gold: rgb(156, 163, 27);
-  --secoundary: #83b4ff;
-  --main: #5a72a0;
-  --bc--header: #1a2130;
-  --bc--header-opacity: rgba(235, 249, 244, 0.768);
-}
 header {
   direction: ltr;
 }
@@ -41,20 +34,32 @@ header nav {
   }
 }
 header {
-  background-color: var(--bc--header);
+  background-color: var(--bc--main);
   height: 60px;
   display: flex;
   align-items: center;
   border-bottom: 2px solid var(--main);
 }
-header .logo {
-  width: 90px;
-  height: 60px;
-  flex: 1;
+@keyframes logoAnima {
+  0% {
+    text-shadow: 0px 0px 0px var(--main);
+  }
+  50% {
+    text-shadow: 0px 0px 40px var(--main);
+  }
+  100% {
+    text-shadow: 0px 0px 0px var(--main);
+  }
 }
-header .logo img {
-  width: 90px;
-  height: 60px;
+header .logo {
+  flex: 1;
+  color: var(--secoundary);
+  padding-inline-start: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  animation-name: logoAnima;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 header ul {
   display: flex;
@@ -71,10 +76,10 @@ header ul li {
     flex-direction: column;
     position: absolute;
     z-index: 1;
-    background-color: var(--bc--header-opacity);
+    background-color: var(--bc-menu);
     top: 40px;
     right: 26px;
-    padding: 5px;
+    padding: 5px 10px;
     gap: 10px;
     border-radius: 2px;
   }
@@ -90,7 +95,7 @@ header ul li {
     border-color: rgba(255, 0, 0, 0) rgba(255, 0, 0, 0) var(--main);
   }
   header ul li:hover {
-    border-bottom: 1px solid var(--gold);
+    border-bottom: 1px solid var(--secoundary);
     padding-bottom: 7px;
     transition: all 1s;
   }

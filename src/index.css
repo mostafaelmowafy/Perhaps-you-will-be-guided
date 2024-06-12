@@ -1,3 +1,16 @@
+@import url(https://fonts.googleapis.com/earlyaccess/amiri.css);
+:root {
+  --gold: rgb(208, 219, 0);
+  --secoundary: #83b4ff;
+  --main: #5a72a0;
+  --bc--main: #1a2130;
+  --secoundary-background: #f7f7f7;
+  --secoundary-butn: #e7e7e7;
+  --btn-color: rgba(94, 192, 216, 0.6);
+  --btn-hover-color: rgb(94, 191, 216);
+  --another-btn-color: #7950f2;
+  --bc-menu: #122138a7;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -13,4 +26,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-@import url(https://fonts.googleapis.com/earlyaccess/amiri.css);

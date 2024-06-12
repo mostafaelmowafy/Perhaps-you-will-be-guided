@@ -30,9 +30,9 @@ iframe {
   margin-block: 5px;
 }
 .card {
-  width: 70%;
-  height: 40vw;
-  margin-block: 40px;
+  width: 50%;
+  height: 35vw;
+  margin-block: 60px;
   color: var(--secoundary);
   border: 1px solid var(--main);
   border-radius: 25px;

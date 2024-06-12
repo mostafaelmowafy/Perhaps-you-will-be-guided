@@ -1,6 +1,5 @@
 import styles from "./prophets.module.css";
 import { prophetsData } from "./Data";
-import Poster from "./Poster";
 import { useState } from "react";
 
 function Prophets() {
@@ -12,7 +11,6 @@ function Prophets() {
   }
   return (
     <div className="container">
-      {/* <Poster url={require("./assets/images/poster3.jpg")} /> */}
       <div className={styles.header}>
         <ul>
           <li

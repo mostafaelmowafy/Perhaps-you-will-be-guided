@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import logo from "./assets/images/logo.jpeg";
 import "./header.css";
 // import { useState } from "react";
 
@@ -12,9 +11,7 @@ function Header() {
 
   return (
     <header>
-      <div className="logo">
-        <img src={logo} alt="Logo" />
-      </div>
+      <div className="logo">لَعَلَّكُمْ تَهْتَدُونَ</div>
       <nav>
         <div className="menu">
           <div className="bar1"></div>

@@ -1,12 +1,16 @@
-:root {
-  /* --gold: rgb(156, 163, 27); */
-  /* --secoundary: #83b4ff; */
-  /* --main: #5a72a0;
-  --btn-color: rgba(94, 192, 216, 0.6);
-  --btn-hover-color: rgb(94, 191, 216); */
-}
 body {
   background-color: var(--bc--main);
+}
+@keyframes box {
+  0% {
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    box-shadow: 0px 0px 5px var(--secoundary);
+  }
+  100% {
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
+  }
 }
 .main {
   display: flex;
@@ -20,18 +24,19 @@ body {
   /* height: 100vh; */
 }
 .main .card {
-  width: 28%;
-  /* height: 450px; */
+  width: 20%;
+  max-height: 450px;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  /* background-color: var(--main); */
   color: white;
   font-size: 14px;
   margin: 1.5%;
   cursor: pointer;
-  border: solid 1px var(--main);
   overflow: hidden;
+  animation-name: box;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 @media (max-width: 940px) {
   .main .card {
@@ -54,8 +59,7 @@ body {
     margin: 40px 0px;
   }
   .main .card {
-    width: 95%;
-    height: 400px;
+    width: 100%;
     margin-block-end: 40px;
   }
   .main .card img {
@@ -82,4 +86,18 @@ body {
 .quran_h3 {
   color: var(--secoundary);
   margin-block-start: 10px;
+}
+
+.quran_h3 span {
+  float: left;
+  font-size: 14px;
+}
+@media (max-width: 370px) {
+  .quran_h3 {
+    text-align: center;
+  }
+  .quran_h3 span {
+    float: none;
+    display: block;
+  }
 }
