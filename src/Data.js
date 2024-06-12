@@ -849,8 +849,27 @@ const prophetsData = [
     ],
   },
   {
-    determination: true,
+    determination: false,
     id: 2,
+    name: "إدريس عليه السلام",
+    image: require("./assets/images/edres.jpg"),
+    description:
+      "يُعتقد أنه كان من الأنبياء الذين جاءوا بعد آدم وقبل نوح. وهو معروف بحكمته وعلمه، ويُقال إنه كان أول من خط بالقلم. وقد ذُكر في القرآن الكريم بأنه كان صديقًا نبيًا وأن الله رفعه مكانًا عليًا.",
+
+    // links: [
+    //   {
+    //     content: "",
+    //     url: "",
+    //   },
+    //   {
+    //     content: "",
+    //     url: "",
+    //   },
+    // ],
+  },
+  {
+    determination: true,
+    id: 3,
     name: "نوح عليه السلام",
     image: require("./assets/images/noh2.jpg"),
     description:
@@ -873,45 +892,7 @@ const prophetsData = [
   },
   {
     determination: false,
-    id: 3,
-    name: "إدريس عليه السلام",
-    image: require("./assets/images/edres.jpg"),
-    description:
-      "يُعتقد أنه كان من الأنبياء الذين جاءوا بعد آدم وقبل نوح. وهو معروف بحكمته وعلمه، ويُقال إنه كان أول من خط بالقلم. وقد ذُكر في القرآن الكريم بأنه كان صديقًا نبيًا وأن الله رفعه مكانًا عليًا.",
-
-    // links: [
-    //   {
-    //     content: "",
-    //     url: "",
-    //   },
-    //   {
-    //     content: "",
-    //     url: "",
-    //   },
-    // ],
-  },
-  {
-    determination: false,
     id: 4,
-    name: "صالح عليه السلام",
-    image: require("./assets/images/saleh.jpg"),
-    description:
-      "أرسل إلى قوم ثمود الذين عاشوا في منطقة الحجر، وقد دعاهم إلى التوحيد وترك عبادة الأصنام. وأيده الله بمعجزة الناقة التي انشقت من الصخر، لكن قومه قتلوا الناقة وعصوا أمر الله، فأهلكهم الله بصيحة عظيمة.",
-
-    links: [
-      {
-        content: "وعى",
-        url: "https://www.youtube.com/watch?v=UnB0CTWxq98",
-      },
-      {
-        content: "نبيل العوضي",
-        url: "https://youtu.be/ck6vaENGENg?si=xVJO-1Gil8mZUcjs",
-      },
-    ],
-  },
-  {
-    determination: false,
-    id: 5,
     name: "هود عليه السلام",
     image: require("./assets/images/hod.jpg"),
     description:
@@ -926,6 +907,25 @@ const prophetsData = [
       //   content: "",
       //   url: "",
       // },
+    ],
+  },
+  {
+    determination: false,
+    id: 5,
+    name: "صالح عليه السلام",
+    image: require("./assets/images/saleh.jpg"),
+    description:
+      "أرسل إلى قوم ثمود الذين عاشوا في منطقة الحجر، وقد دعاهم إلى التوحيد وترك عبادة الأصنام. وأيده الله بمعجزة الناقة التي انشقت من الصخر، لكن قومه قتلوا الناقة وعصوا أمر الله، فأهلكهم الله بصيحة عظيمة.",
+
+    links: [
+      {
+        content: "وعى",
+        url: "https://www.youtube.com/watch?v=UnB0CTWxq98",
+      },
+      {
+        content: "نبيل العوضي",
+        url: "https://youtu.be/ck6vaENGENg?si=xVJO-1Gil8mZUcjs",
+      },
     ],
   },
   {
@@ -958,25 +958,6 @@ const prophetsData = [
   {
     determination: false,
     id: 7,
-    name: "إسماعيل عليه السلام",
-    image: require("./assets/images/esma3el.png"),
-    description:
-      "هو ابن النبي إبراهيم عليه السلام والسيدة هاجر، وُلد في أرض الشام وعُرف بصبره وتحمله. كانت حياته مليئة بالتجارب والابتلاءات، وهو أحد أجداد النبي محمد صلى الله عليه وسلم",
-
-    links: [
-      {
-        content: "نبيل العوضي",
-        url: "https://youtu.be/xKc6_kZYq9I?si=64aC-N_KrHCIePk_",
-      },
-      //   {
-      //     content: "",
-      //     url: "",
-      //   },
-    ],
-  },
-  {
-    determination: false,
-    id: 8,
     name: "لوط عليه السلام",
     image: require("./assets/images/loot.jpg"),
     description:
@@ -993,6 +974,26 @@ const prophetsData = [
       },
     ],
   },
+  {
+    determination: false,
+    id: 8,
+    name: "إسماعيل عليه السلام",
+    image: require("./assets/images/esma3el.png"),
+    description:
+      "هو ابن النبي إبراهيم عليه السلام والسيدة هاجر، وُلد في أرض الشام وعُرف بصبره وتحمله. كانت حياته مليئة بالتجارب والابتلاءات، وهو أحد أجداد النبي محمد صلى الله عليه وسلم",
+
+    links: [
+      {
+        content: "نبيل العوضي",
+        url: "https://youtu.be/xKc6_kZYq9I?si=64aC-N_KrHCIePk_",
+      },
+      //   {
+      //     content: "",
+      //     url: "",
+      //   },
+    ],
+  },
+
   {
     determination: false,
     id: 9,
@@ -1091,10 +1092,10 @@ const prophetsData = [
   {
     determination: false,
     id: 14,
-    name: "هارون عليه السلام",
-    image: require("./assets/images/haron.jpg"),
+    name: "ذو الكفل عليه السلام",
+    image: require("./assets/images/zoalkafal.jpg"),
     description:
-      "هو أخو النبي موسى ووزيره، وقد ساعده في دعوة فرعون وقومه للإيمان بالله تعالى.",
+      "ذُكر في القرآن الكريم ويُعتقد أنه كان نبيًا صالحًا ومُلتزمًا بعهده مع الله.",
 
     // links: [
     //   {
@@ -1129,10 +1130,10 @@ const prophetsData = [
   {
     determination: false,
     id: 16,
-    name: "ذو الكفل عليه السلام",
-    image: require("./assets/images/zoalkafal.jpg"),
+    name: "هارون عليه السلام",
+    image: require("./assets/images/haron.jpg"),
     description:
-      "ذُكر في القرآن الكريم ويُعتقد أنه كان نبيًا صالحًا ومُلتزمًا بعهده مع الله.",
+      "هو أخو النبي موسى ووزيره، وقد ساعده في دعوة فرعون وقومه للإيمان بالله تعالى.",
 
     // links: [
     //   {
