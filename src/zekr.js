@@ -10,7 +10,7 @@ export default function Zekr({ z }) {
   }
 
   return (
-    <p
+    <div
       key={z.content}
       onClick={() => handleClick()}
       className={count === +z.count && styles.full}
@@ -19,6 +19,6 @@ export default function Zekr({ z }) {
       <span>
         {count}/{z.count}
       </span>
-    </p>
+    </div>
   );
 }

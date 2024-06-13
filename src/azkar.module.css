@@ -23,7 +23,7 @@
   color: var(--secoundary);
 }
 
-.content p {
+.content div div {
   background-color: rgba(240, 248, 255, 0.08);
   padding: 10px;
   border-radius: 5px;
@@ -31,8 +31,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-block-end: 10px;
 }
-.content p span {
+.content div div span {
   color: var(--main);
 }
 .full {

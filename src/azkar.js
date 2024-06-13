@@ -26,14 +26,12 @@ export default function Azkar() {
         {azkarData.map((azkar) => {
           //   console.log(azkar.data);
           return (
-            <>
-              <div className={styles.card}>
-                {azka === azkar.data[0].category &&
-                  azkar.data.map((d) => {
-                    return <Zekr z={d} />;
-                  })}
-              </div>
-            </>
+            <div className={styles.card} key={azkar.data[0].category}>
+              {azka === azkar.data[0].category &&
+                azkar.data.map((d) => {
+                  return <Zekr z={d} />;
+                })}
+            </div>
           );
         })}
       </div>
