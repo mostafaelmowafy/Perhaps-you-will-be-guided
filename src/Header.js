@@ -1,14 +1,7 @@
 import { Link } from "react-router-dom";
 import "./header.css";
-// import { useState } from "react";
 
 function Header() {
-  // const [showMenue, setShowMenu] = useState(false);
-
-  // document.body.addEventListener("click", () => {
-  //   setShowMenu(false);
-  // });
-
   return (
     <header>
       <div className="logo">لَعَلَّكُمْ تَهْتَدُونَ</div>
@@ -29,7 +22,7 @@ function Header() {
             <Link to="quran">قرأن</Link>
           </li>
           <li>
-            <Link to="remembrance">أذكار</Link>
+            <Link to="azkar">أذكار</Link>
           </li>
           <li>
             <Link to="question"> أسئلة </Link>

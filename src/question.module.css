@@ -76,9 +76,13 @@
 }
 .numbers .active {
   background-color: var(--secoundary);
-  color: #fff;
 }
-
+.numbers .true {
+  background-color: rgb(50, 186, 124);
+}
+.numbers .false {
+  background-color: rgb(239, 70, 57);
+}
 .message {
   text-align: center;
   font-size: 20px;
@@ -133,8 +137,24 @@ h3 {
 
 .answer {
   text-align: center;
-  margin-block: 50px;
+  margin-block: 30px 0;
 }
 .ques_h3 {
+  color: var(--secoundary);
+}
+.answer span img {
+  width: 25px;
+  height: 25px;
+  margin: 5px 5px 0px;
+  cursor: pointer;
+}
+.answer span img:hover {
+  transform: scale(1.1);
+}
+.score {
+  margin-block-start: 20px;
+  font-weight: bold;
+}
+.score span {
   color: var(--secoundary);
 }

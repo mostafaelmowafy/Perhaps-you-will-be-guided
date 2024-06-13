@@ -28,8 +28,14 @@
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .content p span {
-  float: left;
   color: var(--main);
+}
+.full {
+  color: var(--main);
+  text-decoration: line-through;
 }
