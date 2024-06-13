@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./azkar.module.css";
+import styles from "./Remembrance.module.css";
 export default function Zekr({ z }) {
   const [count, setCount] = useState(0);
 

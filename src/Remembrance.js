@@ -1,9 +1,9 @@
 import { useState } from "react";
-import styles from "./azkar.module.css";
+import styles from "./Remembrance.module.css";
 import { azkarData } from "./Data";
 import Zekr from "./zekr";
 
-export default function Azkar() {
+export default function Remembrance() {
   const [azka, setAzka] = useState("أذكار الصباح");
 
   return (

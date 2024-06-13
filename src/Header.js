@@ -22,7 +22,7 @@ function Header() {
             <Link to="quran">قرأن</Link>
           </li>
           <li>
-            <Link to="azkar">أذكار</Link>
+            <Link to="Remembrance">أذكار</Link>
           </li>
           <li>
             <Link to="question"> أسئلة </Link>
